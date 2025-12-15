@@ -72,11 +72,27 @@ const CryptoToCash = () => {
         options={fiatCurrencies}
       />
 
-      <Select label="Pay from" items={payFromOptions} value={payFrom} onChange={setPayFrom} />
+      <Select
+        label="Pay from"
+        items={payFromOptions}
+        value={payFrom}
+        onChange={setPayFrom}
+        aria-label="Select wallet to pay from"
+      />
 
-      <Select label="Pay to" items={payFromOptions} value={payTo} onChange={setPayTo} />
+      <Select
+        label="Pay to"
+        items={payFromOptions}
+        value={payTo}
+        onChange={setPayTo}
+        aria-label="Select wallet to pay to"
+      />
 
-      <PrimaryButton disabled={errors.length > 0} label="Convert now" />
+      <PrimaryButton
+        disabled={errors.length > 0}
+        label="Convert now"
+        aria-disabled={errors.length > 0}
+      />
     </div>
   );
 };

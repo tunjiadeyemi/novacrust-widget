@@ -17,7 +17,7 @@ const App = () => {
         }}
         className={`w-full m-auto border border-[#CCF6E5] p-4 lg:p-8 rounded-[30px] flex flex-col gap-4 md:gap-10 ${
           !width ? 'max-w-160' : ''
-        } ${!height ? 'h-auto max-h-189.5' : ''}`}
+        } ${!height ? 'h-auto max-h-[758px]' : ''}`}
       >
         <Tabs />
         <Rout />

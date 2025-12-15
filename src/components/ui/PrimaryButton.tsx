@@ -10,10 +10,10 @@ const PrimaryButton = ({
   return (
     <button
       type="button"
-      className={`${className} bg-primary text-sm lg:text-base h-12 lg:h-15 w-full text-center mt-0 md:mt-5 text-white font-bold rounded-[30px] ${
+      className={`${className} bg-primary text-sm lg:text-base h-12 lg:h-15 w-full text-center text-white font-bold rounded-[30px] ${
         disabled
           ? 'opacity-50 cursor-not-allowed'
-          : 'cursor-pointer hover:scale-95 duration-500 transition-all'
+          : 'cursor-pointer hover:scale-95 duration-500 transition-all mt-0 md:mt-5'
       }`}
       disabled={disabled}
     >

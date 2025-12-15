@@ -28,6 +28,7 @@ const Tabs = () => {
       ref={containerRef}
       className="relative bg-secondary w-full lg:w-[80%] h-auto mx-auto grid grid-cols-3 mt-2 items-center rounded-[30px]"
       style={{ overflow: 'hidden' }}
+      role="tablist"
     >
       {/* Sliding indicator */}
       <div
@@ -43,6 +44,9 @@ const Tabs = () => {
           key={index}
           type="button"
           data-tab
+          role="tab"
+          aria-selected={activeTab === item.slug}
+          tabIndex={activeTab === item.slug ? 0 : -1}
           className={`relative z-10 text-xs md:text-sm w-full h-8.5 flex items-center justify-center rounded-[30px] font-medium transition-all duration-300 ${
             activeTab === item.slug ? 'text-white' : 'text-[#828282]'
           } `}
