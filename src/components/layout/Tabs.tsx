@@ -26,7 +26,7 @@ const Tabs = () => {
   return (
     <div
       ref={containerRef}
-      className="relative bg-tertiary w-full lg:w-[80%] h-auto mx-auto grid grid-cols-3 mt-2 items-center rounded-[30px]"
+      className="relative bg-secondary w-full lg:w-[80%] h-auto mx-auto grid grid-cols-3 mt-2 items-center rounded-[30px]"
       style={{ overflow: 'hidden' }}
     >
       {/* Sliding indicator */}
