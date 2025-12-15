@@ -23,7 +23,7 @@ export default function Select({ items, value, onChange, width = 'w-full', label
       {label && <label className="text-[#013941] text-base font-medium block mb-3">{label}</label>}
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className={`flex items-center justify-between ${width} gap-2 px-5 h-[60px] rounded-[30px] transition-colors outline-none border border-[#E0E0E0]`}
+        className={`flex items-center justify-between ${width} gap-2 px-5 h-15 rounded-[30px] transition-colors outline-none border border-[#E0E0E0]`}
       >
         <div className="flex items-center gap-4">
           {selectedItem && (
@@ -53,7 +53,7 @@ export default function Select({ items, value, onChange, width = 'w-full', label
                       onChange(item.name);
                       setIsOpen(false);
                     }}
-                    className={`w-full h-[48px] px-3 text-left hover:bg-[#F5F5F5] rounded-[12px] transition-colors flex items-center gap-3 ${
+                    className={`w-full h-12 px-3 text-left hover:bg-[#F5F5F5] rounded-xl transition-colors flex items-center gap-3 ${
                       item.name === value ? 'bg-[#F5F5F5]' : ''
                     }`}
                   >

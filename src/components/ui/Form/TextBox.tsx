@@ -32,7 +32,7 @@ const TextBox: React.FC<TextBoxProps> = ({
         value={value}
         onChange={onChange}
         placeholder={placeholder}
-        className="border border-[#E0E0E0] rounded-[30px] px-5 h-[50px] lg:h-[60px] text-base outline-none"
+        className="border border-[#E0E0E0] rounded-[30px] px-5 h-12.5 lg:h-15 text-base outline-none"
         {...rest}
       />
     </div>

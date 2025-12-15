@@ -38,7 +38,7 @@ export default function Dropdown({
     <div className="relative">
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className={`flex items-center justify-between ${width} gap-2 px-1.5 h-[36px] bg-[#F7F7F7] hover:bg-gray-150 rounded-[20px] transition-colors outline-none border border-[#E0E0E0]`}
+        className={`flex items-center justify-between ${width} gap-2 px-1.5 h-9 bg-[#F7F7F7] hover:bg-gray-150 rounded-[20px] transition-colors outline-none border border-[#E0E0E0]`}
       >
         <div className="flex items-center gap-1">
           <img src={selectedItem?.src} alt={selectedItem?.name} className="w-6 h-6" />
@@ -54,7 +54,7 @@ export default function Dropdown({
       {isOpen && (
         <>
           <div className="fixed inset-0 z-10" onClick={() => setIsOpen(false)} />
-          <div className="absolute right-0 flex flex-col gap-1 mt-1 w-[264px] bg-white rounded-[20px] border border-gray-200 z-20 p-2">
+          <div className="absolute right-0 flex flex-col gap-1 mt-1 w-66 bg-white rounded-[20px] border border-gray-200 z-20 p-2">
             {search && (
               <input
                 type="text"
@@ -74,7 +74,7 @@ export default function Dropdown({
                     onChange(item.name);
                     setIsOpen(false);
                   }}
-                  className={`w-full h-[48px] px-2 text-left hover:bg-[#F5F5F5] rounded-[12px] transition-colors flex items-center gap-3 ${
+                  className={`w-full h-12 px-2 text-left hover:bg-[#F5F5F5] rounded-xl transition-colors flex items-center gap-3 ${
                     item.name === value ? 'bg-[#F5F5F5]' : ''
                   }`}
                 >
@@ -87,7 +87,7 @@ export default function Dropdown({
               ))}
 
             {filteredItems.length === 0 && (
-              <div className="w-full h-[42px] flex items-center justify-center text-sm text-gray-500">
+              <div className="w-full h-10.5 flex items-center justify-center text-sm text-gray-500">
                 No results found.
               </div>
             )}

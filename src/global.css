@@ -3,21 +3,6 @@
 @import "tailwindcss";
 
 @font-face {
-  font-family: 'Clash Display Extralight';
-  src: url('./fonts/clashDisplay/ClashDisplay-Extralight.otf') format('opentype');
-}
-
-@font-face {
-  font-family: 'Clash Display Light';
-  src: url('./fonts/clashDisplay/ClashDisplay-Light.otf') format('opentype');
-}
-
-@font-face {
-  font-family: 'Clash Display Regular';
-  src: url('./fonts/clashDisplay/ClashDisplay-Regular.otf') format('opentype');
-}
-
-@font-face {
   font-family: 'Clash Display Medium';
   src: url('./fonts/clashDisplay/ClashDisplay-Medium.otf') format('opentype');
 }
@@ -28,18 +13,6 @@
 
 button {
   font-family: 'Instrument Sans', sans-serif;
-}
-
-.outfit {
-  font-family: 'Outfit', sans-serif;
-}
-
-.clash-display-extralight {
-  font-family: 'Clash Display Extralight', sans-serif;
-}
-
-.clash-display-light {
-  font-family: 'Clash Display Light', sans-serif;
 }
 
 .clash-display-medium {
