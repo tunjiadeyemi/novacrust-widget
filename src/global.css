@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Outfit:wght@100..900&display=swap');
+
+@import "tailwindcss";
+
+@font-face {
+  font-family: 'Clash Display Extralight';
+  src: url('./fonts/clashDisplay/ClashDisplay-Extralight.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Clash Display Light';
+  src: url('./fonts/clashDisplay/ClashDisplay-Light.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Clash Display Regular';
+  src: url('./fonts/clashDisplay/ClashDisplay-Regular.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Clash Display Medium';
+  src: url('./fonts/clashDisplay/ClashDisplay-Medium.otf') format('opentype');
+}
+
+* {
+  font-family: 'Outfit', sans-serif;
+}
+
+button {
+  font-family: 'Instrument Sans', sans-serif;
+}
+
+.outfit {
+  font-family: 'Outfit', sans-serif;
+}
+
+.clash-display-extralight {
+  font-family: 'Clash Display Extralight', sans-serif;
+}
+
+.clash-display-light {
+  font-family: 'Clash Display Light', sans-serif;
+}
+
+.clash-display-medium {
+  font-family: 'Clash Display Medium', sans-serif;
+}
+
+.bg-primary {
+  background-color: #013941;
+}
+
+.bg-secondary {
+  background-color: #828282;
+}
+
+.bg-tertiary {
+  background-color: #F5F5F5;
+}
